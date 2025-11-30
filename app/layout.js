@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic'; // ← Désactive le prerendering statique
+export const dynamic = 'force-dynamic';
 
 import { Inter } from 'next/font/google';
 import { ClerkClientProvider } from '../providers/clerk-provider';
