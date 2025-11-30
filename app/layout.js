@@ -1,7 +1,7 @@
-export const dynamic = 'force-dynamic'; // ← désactive le prerendering statique
+export const dynamic = 'force-dynamic'; // ← Désactive le prerendering statique
 
 import { Inter } from 'next/font/google';
-import { ClerkProvider } from './providers/ClerkProvider';
+import { ClerkClientProvider } from '../providers/clerk-provider';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <ClerkProvider>
+        <ClerkClientProvider>
           {children}
-        </ClerkProvider>
+        </ClerkClientProvider>
       </body>
     </html>
   );
