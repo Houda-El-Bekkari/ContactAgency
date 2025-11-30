@@ -1,23 +1,46 @@
 {
-  "name": "projet",
+  "name": "gestion-contact-agency",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "seed": "prisma db seed",
+    "db:seed": "node prisma/seed.js",
+    "db:reset": "prisma migrate reset && npm run db:seed",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.35.5",
+    "@prisma/client": "^5.0.0",
+    "@vercel/kv": "^3.0.0",
+    "clsx": "^2.0.0",
+    "csv-parse": "^6.1.0",
+    "csv-parser": "^3.2.0",
     "next": "16.0.4",
+    "papaparse": "^5.5.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
+    "@prisma/client": "^6.19.0",
     "@tailwindcss/postcss": "^4",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "autoprefixer": "^10.0.0",
     "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.4",
-    "tailwindcss": "^4"
+    "eslint": "^8.0.0",
+    "eslint-config-next": "14.0.0",
+    "postcss": "^8.0.0",
+    "prisma": "^5.0.0",
+    "tailwindcss": "^3.3.0",
+    "tsx": "^4.20.6"
   }
 }
