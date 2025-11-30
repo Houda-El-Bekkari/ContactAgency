@@ -17,6 +17,7 @@
     "seed": "node prisma/seed.js"
   },
   "dependencies": {
+    "@clerk/localizations": "^3.28.5",
     "@clerk/nextjs": "^6.35.5",
     "@prisma/client": "^5.0.0",
     "@vercel/kv": "^3.0.0",

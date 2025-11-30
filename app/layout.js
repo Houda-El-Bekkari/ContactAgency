@@ -1,16 +1,10 @@
-export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic'; // must be at the top
 
 import { Inter } from 'next/font/google';
 import { ClerkClientProvider } from '../providers/clerk-provider';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
-
-export const metadata = {
-  title: 'ContactAgency - Gestion des Agences et Contacts',
-  description: 'Plateforme de gestion des agences partenaires et de leurs contacts.',
-  keywords: 'agences, contacts, gestion, dashboard, professionnel',
-};
 
 export default function RootLayout({ children }) {
   return (
