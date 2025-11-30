@@ -1,4 +1,4 @@
-import { ClerkProvider } from '@clerk/nextjs';
+import { ClerkClientProvider } from '../providers/clerk-provider';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <ClerkProvider>
+        <ClerkClientProvider>
           {children}
-        </ClerkProvider>
+        </ClerkClientProvider>
       </body>
     </html>
   );
