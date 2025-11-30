@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { ClerkClientProvider } from '../providers/clerk-provider';
 import { Inter } from 'next/font/google';
 import './globals.css';
