@@ -9,6 +9,7 @@ export const metadata = {
   description: 'Plateforme de gestion des agences partenaires et de leurs contacts. Outils puissants pour optimiser votre workflow.',
   keywords: 'agences, contacts, gestion, dashboard, professionnel',
 };
+export const dynamic = 'force-dynamic';
 
 export default function RootLayout({ children }) {
   return (
